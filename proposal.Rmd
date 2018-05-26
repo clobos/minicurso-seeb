@@ -1,0 +1,56 @@
+---
+title: Shiny para o ensino-aprendizagem de Estatística Bayesiana
+author: Cristian Villegas \& Roseli A. Leandro \& Eduardo E. Ribeiro Jr
+date: Departamento de Ciências Exatas - ESALQ, USP
+header-includes:
+  - \usepackage{mathpazo}
+output:
+  rmarkdown::pdf_document: default
+  rmarkdown::github_document: default
+---
+
+# Resumo #
+
+Com o aumento da complexidade dos modelos empregados na análise de
+dados, a inferência considerando-se a abordagem bayesiana tem sido cada
+vez mais utilizada em diferentes áreas de pesquisa. Com o objetivo
+facilitar o ensino-aprendizagem da estatística bayesiana, cada dia mais
+necessário, propõe-se este minicurso, que irá explorar conceitos básicos
+tais como: distribuição a priori (informativas e não informativas),
+função de verossimilhança, distribuição a posteriori, e técnicas de
+amostragem Metropolis-Hastings e amostrador de Gibbs, com a utilização
+do pacote R de código aberto R shiny (http://www.shiny.rstudio.com) para
+elaboração de interfaces interativas. O Shiny fornece uma estrutura
+elegante, poderosa e estimulante para criar aplicativos web sem requerer
+conhecimento em HTML, CSS ou JavaScript, propiciando a melhoria no
+processo de ensino-aprendizado. Nesse minicurso serão abordados modelos
+lineares, lineares generalizados e não lineares sob a perspectiva
+bayesiana, com aplicações envolvendo dados reais de estudos
+experimentais. Os recursos pra criação de interfaces interativas serão
+disponibilizados em um pacote R para que possam ser utilizados i) por
+estudantes ou entusiastas em estatística bayesiana, para o aprendizado;
+e ii) por docentes ou responsáveis por cursos de estatística bayesiana,
+como ferramenta complementar para o ensino.
+
+# Programa #
+
+1. Apresentação do pacote Shiny para elaboração de aplicativos web
+   com R (1h15min)
+    * O que é o Shiny e o pacote \texttt{shiny};
+    * Estrutura para implementação de aplicativos;
+    * Exemplos;
+    * Disponibilização web de aplicativos.
+1. Ensino-aprendizagem de inferência bayesiana com Shiny (1h45min)
+    * Distribuições a priori, função de verossimilhança, a
+      distribuição posteriori e distribuição preditiva utilizando
+      distribuições a priori conjugadas;
+    * Algoritmos de amostragem;
+    * Exemplos.
+1. Auxílio de recursos interativos na análise de dados sob a
+   perspectiva bayesiana (1h)
+
+# Público alvo #
+
+O curso é destinado a estudantes, professores e profissionais
+interessados em inferência bayesiana e exige apenas conhecimentos
+básicos da linguagem `R` e de inferência bayesiana.
