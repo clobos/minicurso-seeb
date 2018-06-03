@@ -62,10 +62,10 @@ fluidPage(title="Gibbs Sampling",
 
     mainPanel(
       h1(strong("Gibbs Sampling for Beta Binomial distribution"), align="center"),
-      plotOutput("plot"),
-      plotOutput("plot"),
+      plotOutput("plot1"),
+      plotOutput("plot2"),
       h3(strong("Summary of Chains",style="color:black")),
-      verbatimTextOutput("summary")
+      verbatimTextOutput("summary1")
        )
 )
 
