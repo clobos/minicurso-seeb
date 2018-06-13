@@ -11,17 +11,17 @@ fluidPage(title="Binomial distribution",
       withMathJax(), 
       h3(strong('Prior Beta distribution'),
          style="color:black"),
-      h3(numericInput(inputId="alpha",label=HTML("&alpha;"),
+      h3(numericInput(inputId="alpha70",label=HTML("&alpha;"),
                    value=2,min=0.1, max=20, step=0.1)),
-      h3(numericInput(inputId="beta",label=HTML("&beta;"),
+      h3(numericInput(inputId="beta70",label=HTML("&beta;"),
                    value=5,min=0.1, max=20, step=0.1)),
       h3(strong('Binomial Likelihood function',style="color:black")),
-      h3(numericInput(inputId="m",
+      h3(numericInput(inputId="m70",
                       label="Number of trials",
                       value=3,min=1, max=100, step=1)),
-      h3(numericInput(inputId="prob",label=HTML("&theta;"),
+      h3(numericInput(inputId="prob70",label=HTML("&theta;"),
                    value=0.8,min=0, max=1, step=0.1)),
-      h3(numericInput(inputId="n",
+      h3(numericInput(inputId="n70",
                       label="Sample size",
                       value=20,min=1, max=1000, step=1)),
       h3(strong("Reference")),
@@ -34,7 +34,7 @@ fluidPage(title="Binomial distribution",
     ),
     
     mainPanel(
-      plotOutput("distPlot1")
+      plotOutput("distPlot70")
       )
   )
   )#tabPanel("Learning about Theta"
@@ -47,9 +47,9 @@ fluidPage(title="Binomial distribution",
                           withMathJax(), 
                           h3(strong('Posterior Beta distribution',
                                     style="color:black")),
-                          h3(numericInput(inputId="confint",label="Credible Interval level",
+                          h3(numericInput(inputId="confint70",label="Credible Interval level",
                                           value=0.95,min=0.01, max=1, step=0.01)),
-                          h3(numericInput(inputId="percentil",label="Percentile",
+                          h3(numericInput(inputId="percentil70",label="Percentile",
                                           value=0.50,min=0.01, max=1, step=0.01)),
                           br(),
                           br(),
@@ -64,7 +64,7 @@ fluidPage(title="Binomial distribution",
                           ),
                         
                         mainPanel(
-                          plotOutput("distPlot3")
+                          plotOutput("distPlot71")
                           
                         )
                           )
@@ -81,7 +81,7 @@ fluidPage(title="Binomial distribution",
                           h3(strong('Posterior Preditive distribution'),
                              style="color:black"),
                           br(),
-                          h3(sliderInput(inputId="m.linha",
+                          h3(sliderInput(inputId="m.linha70",
                                          label="",
                                        value=1,min=1, max=50, step=1,animate = TRUE)),
                           br(),
@@ -96,7 +96,7 @@ fluidPage(title="Binomial distribution",
                           ),
                         
                       mainPanel(
-                        plotOutput("distPlot2")
+                        plotOutput("distPlot72")
                         
                       )
                       )
